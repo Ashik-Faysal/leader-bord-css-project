@@ -5,7 +5,33 @@ body {
   font-family: "Poppins", sans-serif;
   background: #e5e5e5;
 }
+/* header section start---------*/
+.header{
+  display: flex;
+  justify-content: space-between;
+  font-size: 2em;
+  width: 100%;
+  background: #562EFF;
+  color: #FFFFFF;
+  border-radius: 15px;
+}
+.header img{
+  width: 56px;
+}
+.header-logo{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.header-navigation, ul{
+  display: flex;
+  align-items: center;
+}
 
+ul li{
+  list-style: none;
+  margin-right: 20px;
+}
 /* top players style  */
 main {
   display: flex;
@@ -122,6 +148,15 @@ hr {
   .player, .blog{
     flex-direction: column;
   }
+  .header{
+flex-direction: column;
+}
+.header-logo{
+  justify-content: center;
+}
+.header-navigation{
+  flex-direction: column-reverse;
+}
 }
 
 /*tablet devises */
